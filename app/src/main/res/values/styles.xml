@@ -8,8 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="menustyle">
-        parent = "Theme.AppCombat.Light">
-        <item name="android:background">@color/colorPrimaryDark</item>
-    </style>
 </resources>

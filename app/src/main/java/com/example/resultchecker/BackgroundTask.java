@@ -12,16 +12,17 @@ import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.Volley;
 
 public class BackgroundTask {
+
     private static BackgroundTask bIns;
     private RequestQueue reqQue;
-    private Context ctx;
+    private final Context ctx;
 
     public BackgroundTask (Context ctx){
         this.ctx = ctx;
-        reqQue = getReq_que();
+        reqQue = getReqQue();
     }
 
-    public  RequestQueue getReq_que(){
+    public  RequestQueue getReqQue(){
         if(reqQue==null){
             Cache cache = new DiskBasedCache(ctx.getCacheDir(),1024*1024);
             Network network = new BasicNetwork(new HurlStack());
