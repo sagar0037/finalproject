@@ -1,30 +1,57 @@
 <resources>
     <string name="app_name">ResultChecker</string>
+    <string name="rights">All rights reserved</string>
+
+    <!-- Login and Register (LoginActivity and RegisterActivity) -->
     <string name="login">Login</string>
-    <string name="account">Do not have any account?</string>
-    <string name="sign">Sign Up</string>
-    <string name="keepLogged">Keep Logged In</string>
-    <string name="prefLogged">login state</string>
+    <string name="register">Register</string>
+    <string name="staff">Staff</string>
+    <string name="student">Student</string>
+    <string name="regAccount">Register Your Account</string>
+    <string name="registered">Already Registered</string>
 
-    <string name="register">Register Your Account</string>
-    <string name="name">full name</string>
-    <string name="user">username</string>
+    <string name="fullName">full name</string>
+    <string name="username">username</string>
     <string name="email">email</string>
-    <string name="pass">password</string>
-    <string name="confirm">confirm password</string>
+    <string name="phone">phone no</string>
+    <string name="instituteId">institute id</string>
+    <string name="password">password</string>
+    <string name="confirmPass">confirm password</string>
 
-    <string name="welcome">Welcome</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <!-- Home Page (HomeActivities) -->
+    <string name="module">Add Module</string>
+    <string name="module_code">module code</string>
+    <string name="module_name">module name</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
 
+    <!--Profile Fragments-->
+    <string name="donation">Donate Us</string>
+    <string name="changePass">Change Password</string>
+    <string name="currentPass">current password</string>
+    <string name="newPass">new password</string>
+
+    <string name="pName">Full Name:</string>
+    <string name="pUsername">Username:</string>
+    <string name="pEmail">Email:</string>
+    <string name="pPhone">Phone No:</string>
+    <string name="pInstitute">Institute:</string>
+
+    <!-- Navigation -->
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="open">open</string>
-    <string name="close">close</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_notify">Notifications</string>
+
+    <!-- QNA and Result Activities -->
+    <string name="question">Question</string>
+    <string name="add_question">Add Question</string>
+    <string name="added_question">Added Question</string>
+    <string name="answer">Answer</string>
+    <string name="result">Result</string>
+    <string name="send">send</string>
+    <string name="give_answer">Give Answers</string>
+
+
 </resources>

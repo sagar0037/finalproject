@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Staff.IndividualActivity">
+
+    <include
+        android:id="@+id/moduleBarLayout"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/viewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/moduleBarLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="200dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Added Questions"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtAdd"
+            android:layout_marginVertical="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/questionView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Answered Questions"
+            android:padding="10dp"
+            android:id="@+id/btnViewAnswers"
+            android:textSize="12sp"
+            android:background="@drawable/button_design"
+            android:layout_marginStart="20dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Checked Questions"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/btnViewResult"
+            android:background="@drawable/button_design"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_height="70dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/fab_question"
+        android:src="@drawable/icon_add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/add" />
+
+</RelativeLayout>

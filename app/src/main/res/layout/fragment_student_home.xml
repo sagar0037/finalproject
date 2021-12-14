@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentFragments.StudentHomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rSliding"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/sildingImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fillColor="@color/white"
+            app:radius="4dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rSliding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtModule"
+            android:textColor="@color/black"
+            android:text="MODULES"
+            android:textSize="20sp"/>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeModules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtModule"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inModuleView"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_module"
+        android:layout_margin="20dp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/blue"
+        android:elevation="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/icon_module"/>
+
+</RelativeLayout>

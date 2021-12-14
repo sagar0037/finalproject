@@ -2,23 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.resultchecker">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity" android:theme="@style/Theme.Design.NoActionBar"/>
-        <activity android:name=".SignActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.PaymentActivity" />
+        <activity android:name=".Activities.AnsweredQuestionActivity" />
+        <activity android:name=".Student.AnswerActivity" />
+        <activity android:name=".Activities.ResultCheckActivity" />
+        <activity android:name=".Activities.ResultActivity" />
+        <activity android:name=".Staff.AnswerCheckActivity" />
+        <activity android:name=".Student.QuestionActivity" />
+        <activity android:name=".Staff.IndividualActivity" />
+        <activity android:name=".Student.InModuleActivity" />
+        <activity android:name=".Staff.ModuleActivity" />
+        <activity android:name=".Activities.StaffHomeActivity" />
+        <activity android:name=".Activities.StudentHomeActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.LoginActivity"/>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

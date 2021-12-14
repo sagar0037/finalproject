@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.AnswerActivity">
+
+    <include
+        android:id="@+id/moduleBarLayout"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/moduleBarLayout">
+
+        <TextView
+            android:id="@+id/titleQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:text="@string/question"/>
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/titleQuestion"
+            android:text="@string/question"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+
+        <TextView
+            android:id="@+id/titleAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtQuestion"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:text="@string/answer"/>
+
+        <TextView
+            android:id="@+id/txtAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/titleAnswer"
+            android:text="@string/answer"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            tools:ignore="TextViewEdits" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

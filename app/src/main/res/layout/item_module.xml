@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:src="@drawable/modules"
+            android:id="@+id/imgModule"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/moduleCode"
+            android:text="10001"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Programming"
+            android:id="@+id/moduleName"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginStart="100dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
